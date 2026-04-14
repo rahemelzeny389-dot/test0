@@ -1,0 +1,158 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+  <title>OWN</title>
+  <meta charset="UTF-8">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ 
+</head>
+
+<body>
+  <header> 
+<div class="head-c">
+  <img class="w-[70px] h-[70px] md:w-[60px] md:h-[55px] lg:w-[60px] lg:h-[55px]" src="./img/a4a692ee4b3b99c9b086456857c8263a-large.jpg" alt="">
+  <ul class="flex gap-5 text-white items-center justify-center mt-[-45px] text-[20px] lg:mt-[-40px] ">
+    <li>Home</li>
+    <li>Services</li>
+    <li>Our Work</li>
+    <li>Our Team</li>
+    <li>Contact Us</li>
+  </ul>
+  <a class="text-[25px] absolute mt-[-30px] ml-[630px] lg:ml-[1400px] md:ml-[900px]" href=""><i class="fa-solid fa-house-chimney fa-flip"></i></a>
+ <button type="button" onclick="showDiv()"><a class="text-[25px] absolute mt-[-30px] ml-[665px] lg:ml-[1450px] md:ml-[950px]" href="#"><i class="fa-solid fa-align-justify fa-flip"></i></a></button>
+</div>
+ 
+  </header>
+  <main class=" w-[100%] lg:h-screen h-[40vh]   bg-cover bg-center pt-[120px] flex flex-col lg:flex-row items-center gap-8 lg:justify-between"
+  style="background-image: url(.//img/1.jpg);"> 
+    
+    <div>
+      <h1 class="lg:text-[50px] text-white font-bold bg-gradient-to-l from-black to-green-500 lg:w-[720px] ml-4 text-[52px] w-[740px] ">Welcome to our T-Shirts Store</h1>
+      <p class="text-gray-200 text-[30px] ml-4 sm:w-[700px] font-bold lg:w-[720px]">Discover unique designs made for your style and personality.
+Find the perfect T-shirt that expresses who you are</p>
+<button class="text-white bg-gradient-to-r from-black to-green-500 w-[200px] h-[55px] rounded-[5px] text-[30px] font-serif mt-[10px] ml-[250px] lg:ml-[18px]">Shop Now</button>
+    </div>
+     <div class="d1-main"></div>
+     <div id="box-main" class=" lg:w-[350px] lg:h-[675px] bg-gradient-to-r from-black to-green-500 opacity-0 scale-95 transition-all duration-1000  absolute mt-[-63px] absolute w-[350px] h-[37.5vh] ml-[0px] shadow-[0-0-20px-#00ff00] pt-6 fixed right-0    ">
+     <button type="button" onclick="hideDiv()"><a class="text-[40px] ml-[300px]" href="#"><i class="fa-solid fa-xmark fa-beat"></i></a></button>
+      <h2 class="text-[30px] text-white font-bold ml-6 pb-4">Menu:</h2>
+      <ul class="text-[25px] text-white font-bold ml-6 space-y-8">
+        <hr>
+        <li>.My Account</li>
+        <hr>
+        <li>.Settings</li>
+        <hr>
+        <li>.Logout</li>
+        <hr>
+        <li>.Profile</li>
+        <hr>
+        <li>.Orders</li>
+        <hr>
+      </ul>
+     </div>
+  </main>
+  <section class="w-full h-[60vh] border-2 border-green-400 shadow-[0_0_10px_#22c55e] rounded-[10px] mt-0 lg:mt-20 flex flex-col lg:flex-row justify-evenly items-center">
+    <div class="flex gap-12 lg:gap-6">
+      <section id="s1-cards1" onclick="this.classList.toggle('flipped')" class="s1-cards">
+       <div class="fornt">
+        <div class="d-for1"></div>
+        <hr class="border-green-400">
+        <h2 class="text-white text-[25px] font-bold">Hoodie</h2>
+        <hr class="border-green-400">
+        <h3 class="text-gray-200 text-[25px]">900£</h3>
+        <hr class="border-green-400">
+        <del class="text-red-500 text-[20px]">950£</del>
+       </div>
+       <div class="back">
+        <div class="d-back1"></div>
+        <p class="text-white">Premium cotton hoodie | Handmade with care</p>
+        <div class="sizes">
+  <button class="size" onclick="selectSize(this)">S</button>
+  <button class="size" onclick="selectSize(this)">M</button>
+  <button class="size" onclick="selectSize(this)">L</button>
+  <button class="size" onclick="selectSize(this)">XL</button>
+</div>
+       </div>
+      </section>
+      <!-- /// -->
+       <section id="s2-cards1" onclick="this.classList.toggle('flipped')" class="s2-cards">
+       <div class="fornt2">
+        <div class="d-for2"></div>
+        <hr class="border-green-400">
+        <h2 class="text-white text-[25px] font-bold">Hoodie</h2>
+        <hr class="border-green-400">
+        <h3 class="text-gray-200 text-[25px]">700£</h3>
+        <hr class="border-green-400">
+        <del class="text-red-500 text-[20px]">950£</del>
+       </div>
+       <div class="back2">
+        <div class="d-back2"></div>
+        <p class="text-white">Premium cotton hoodie | Handmade with care</p>
+        <div class="sizes">
+  <button class="size" onclick="selectSize(this)">S</button>
+  <button class="size" onclick="selectSize(this)">M</button>
+  <button class="size" onclick="selectSize(this)">L</button>
+  <button class="size" onclick="selectSize(this)">XL</button>
+</div>
+       </div>
+      </section>
+    </div>
+
+    <div class="flex gap-12 lg:gap-6">
+      <section id="s1-cards1" onclick="this.classList.toggle('flipped')" class="s1-cards">
+       <div class="fornt">
+        <div class="d-for3"></div>
+        <hr class="border-green-400">
+        <h2 class="text-white text-[25px] font-bold">Hoodie</h2>
+        <hr class="border-green-400">
+        <h3 class="text-gray-200 text-[25px]">750£</h3>
+        <hr class="border-green-400">
+        <del class="text-red-500 text-[20px]">950£</del>
+       </div>
+       <div class="back">
+        <div class="d-back3"></div>
+        <p class="text-white">Premium cotton hoodie | Handmade with care</p>
+        <div class="sizes">
+  <button class="size" onclick="selectSize(this)">S</button>
+  <button class="size" onclick="selectSize(this)">M</button>
+  <button class="size" onclick="selectSize(this)">L</button>
+  <button class="size" onclick="selectSize(this)">XL</button>
+</div>
+       </div>
+      </section>
+      <!-- /// -->
+       <section id="s2-cards1" onclick="this.classList.toggle('flipped')" class="s2-cards">
+       <div class="fornt2">
+        <div class="d-for4"></div>
+        <hr class="border-green-400">
+        <h2 class="text-white text-[25px] font-bold">Hoodie</h2>
+        <hr class="border-green-400">
+        <h3 class="text-gray-200 text-[25px]">800£</h3>
+        <hr class="border-green-400">
+        <del class="text-red-500 text-[20px]">950£</del>
+       </div>
+       <div class="back2">
+        <div class="d-back4"></div>
+        <p class="text-white">Premium cotton hoodie | Handmade with care</p>
+        <div class="sizes">
+  <button class="size" onclick="selectSize(this)">S</button>
+  <button class="size" onclick="selectSize(this)">M</button>
+  <button class="size" onclick="selectSize(this)">L</button>
+  <button class="size" onclick="selectSize(this)">XL</button>
+</div>
+       </div>
+      </section>
+    </div>
+  </section>
+  
+<script src="js/script.js"></script>
+</body>
+
+
+
+
+
+</html>
