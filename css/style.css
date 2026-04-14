@@ -105,15 +105,20 @@ body{
     background-position: center;
     margin: auto;
 }
+  .sizes{
+    margin-top: 20px;
+}
   .size {
-  padding: 10px 15px;
+  padding: 25px 30px;
   margin: 5px;
   border: 1px solid #000;
   background: white;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 28px; 
+  font-weight: bold;
+   
 }
-
 .size.active {
   background: black;
   color: white;
